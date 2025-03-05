@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: #fff;
+    color: #e1e3e5;
     font-family: poppins;
 }
 :root{
@@ -17,7 +17,8 @@
     src: url(/Portfolio/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 body{
-    background-color: #181818;
+    background-color: #111111;
+   
 }
 
 .flex{
@@ -49,6 +50,8 @@ a{
 .top-info{
     align-items: center;
     justify-content: space-between;
+    padding: 5px 20px;
+
 }
 .star{
     color: yellow;
@@ -58,4 +61,43 @@ a{
     border-radius: 5px;
     padding: 5px 7px;
     background-color: #202020;
+}
+.page{
+    width: 100%;
+    height: 100vh;
+}
+
+.screen{
+    width: 60%;
+    height: 100vh;
+    padding: 15px 0px 15px 0px;
+    gap: 1.20rem;
+    display: flex;
+    flex-direction: column;
+}
+.profile-pic img{
+    border-radius: 5px;
+    height: 130px;
+    width: 130px;
+    margin-right: 12px;
+}
+.info-box{
+    flex-direction: column;
+    align-items: baseline;
+}
+.name{
+    font-weight: 900;
+    font-size: 40px;
+}
+.font-size{
+    font-size: 15px;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.code-icon{
+    background-color: #2e2e2e;
 }
