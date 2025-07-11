@@ -1,9 +1,19 @@
+import SkillCard from "./skillCard";
 const Skills = () => {
   return (
     <section className="flex  items-start justify-between border">
-      <div className=" flex flex-col items-start w-auto">
-        <h2>Skills</h2>
-        <p>This is the Skills Section</p>
+      <div className=" flex flex-col items-start w-full">
+        <h2 className="text-xl font-bold">Skills & Tools</h2>
+        <div className="flex items-center justify-around w-full h-auto  py-2">
+          <SkillCard skill={"React"}/>
+          <SkillCard skill={"Express"}/>
+          <SkillCard skill={"Figma"}/>
+          <SkillCard skill={"TypeScript"}/>
+          <SkillCard skill={"MongoDB"}/>
+          <SkillCard skill={"NodeJS"}/>
+          <SkillCard skill={"Tailwind"}/>
+          <SkillCard skill={"SQL"}/>
+        </div>
       </div>
     </section>
   );

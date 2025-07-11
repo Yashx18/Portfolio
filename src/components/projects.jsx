@@ -2,7 +2,7 @@ const Projects  = () => {
   return (
     <section className="flex  items-start justify-between border">
       <div className=" flex flex-col items-start w-auto">
-        <h2>Projects</h2>
+        <h2 className="text-xl font-bold">Projects</h2>
         <p>This is the Projects Section</p>
       </div>
     </section>

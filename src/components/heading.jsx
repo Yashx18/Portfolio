@@ -9,9 +9,16 @@ const Heading = () => {
           <span className="mb-2">Hey, I'm Yash.</span>
           <span className="mb-3">Developer & Designer</span>
         </h1>
-        <div className="border rounded-md px-2 py-1 flex items-center w-fit ">
-          <span><GoDotFill /></span>
-          <span>Available</span>
+        <div className="flex items-center">
+          <div className="border rounded-md px-2 py-1 flex items-center w-fit">
+            <span>Contact</span>
+          </div>
+          <div className="border rounded-md px-2 py-1 flex items-center w-fit">
+            <span>
+              <GoDotFill />
+            </span>
+            <span>Available</span>
+          </div>
         </div>
       </div>
       <div className="flex items-center justify-center w-1/5 border rounded-full">
