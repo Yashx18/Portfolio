@@ -3,7 +3,7 @@ import { GoDotFill } from "react-icons/go";
 
 const Heading = () => {
   return (
-    <section className="flex  items-start justify-between border">
+    <section className="flex  items-start justify-between ">
       <div className="w-auto">
         <h1 className="flex flex-col items-start justify-between font-bold text-4xl h-auto w-auto">
           <span className="mb-2">Hey, I'm Yash.</span>

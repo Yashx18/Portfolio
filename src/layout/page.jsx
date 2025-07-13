@@ -10,7 +10,7 @@ import Navbar from "../components/navbar";
 
 const Page = () => {
   return (
-    <section className="text-white mx-86 w-full h-auto relative">
+    <section id="home" className="text-white mx-86 w-full h-auto relative py-26">
       <Navbar />
       <Heading />
       <About />
