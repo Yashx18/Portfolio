@@ -1,13 +1,25 @@
-const Projects  = () => {
+import ProjectCard from "./projectCard";
+import projectImg from "../assets/projectImg.PNG";
+const Projects = () => {
   return (
-    <section className="flex  items-start justify-between border">
+    <section className="flex  items-start justify-between ">
       <div className=" flex flex-col items-start w-auto">
-        <h2 className="text-xl font-bold">Projects</h2>
-        <p>This is the Projects Section</p>
+        <h2 className="text-xl font-bold mb-2">Projects</h2>
+        <div className="flex flex-col items-center justify-between">
+          <ProjectCard
+            title={"bimla"}
+            liveLink={"https://bimal-murex.vercel.app/"}
+            img={projectImg}
+            githubLink={"https://github.com/Yashx18/bimal"}
+            description={
+              "This is a humorous, satirical single-page web project inspired by classic Indian tobacco ad parodies. Purpose behind to make this is just for fun, meme culture tribute, and frontend design experimentation."
+            }
+          />
+          <p className="text-lg font-mono mb-2">More Projects adding soon !!</p>
+        </div>
       </div>
     </section>
   );
 };
 
 export default Projects;
-
