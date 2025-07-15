@@ -3,8 +3,8 @@ import { FaTelegram } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <section className="flex  items-start justify-between">
-      <div className=" flex flex-col items-start w-auto mb-2">
+    <section className="flex  items-start justify-between" id="contact">
+      <div className=" flex flex-col items-start w-auto mb-4">
         <h2 className="text-xl font-bold mb-2">Reach out to me</h2>
         <div>
           <p>
@@ -14,12 +14,14 @@ const Contact = () => {
           <div className="w-full h-auto  my-2 flex ">
             <a
               href="https://x.com/yashx024"
+              target="_blank"
               className="border border-[#636c79] px-4 py-1 flex items-center mr-2 rounded-md hover:bg-[#101215]"
             >
               <FaXTwitter className="mr-2" /> Twitter
             </a>
             <a
               href="https://t.me/kenx024"
+              target="_blank"
               className="border  border-[#636c79] px-3 py-1 flex items-center rounded-md hover:bg-[#101215]"
             >
               <FaTelegram className="mr-2" />

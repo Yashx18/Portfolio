@@ -3,7 +3,7 @@ import { LuGithub } from "react-icons/lu";
 
 const ProjectCard = ({ title, liveLink, img, description, githubLink }) => {
   return (
-    <div className=" flex items-center justify-center  w-full  border px-2 py-2 rounded-[10px] mb-2">
+    <div className=" flex items-center justify-center  w-full  border border-[#828282] px-3 py-2 rounded-[10px] mb-2">
       {/* Left */}
       <div className="w-6/9 h-2/5 ">
         <img
