@@ -9,7 +9,7 @@ const Heading = () => {
           <span className="mb-2 font-poppins font-extrabold text-5xl">
             Hey, I'm Yash.
           </span>
-          <span className="mb-3 font-poppins font-extrabold text-3xl">
+          <span className="mb-3 font-poppins font-bold text-3xl">
             Developer & Designer
           </span>
         </h1>
