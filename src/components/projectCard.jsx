@@ -18,7 +18,7 @@ const ProjectCard = ({ title, liveLink, img, description, githubLink }) => {
         <div className="flex items-center justify-between">
           <div>
             <h3 className="text-xl font-bold">
-              <a href={liveLink} target="_blank">
+              <a href={liveLink} target="_blank" className="font-poppins">
                 {title}
               </a>
             </h3>
@@ -38,7 +38,7 @@ const ProjectCard = ({ title, liveLink, img, description, githubLink }) => {
         </div>
         {/* Description */}
         <div className="w-full">
-          <p className="w-full">{description}</p>
+          <p className="w-full font-roboto text-[#d4d4d4]">{description}</p>
         </div>
       </div>
     </div>

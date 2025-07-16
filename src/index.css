@@ -1,1 +1,16 @@
+@font-face {
+    font-family: poppins;
+    src: url(../src/assets/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: roboto;
+    src: url(../src/assets/Roboto-Regular.ttf);
+}
+
 @import "tailwindcss";
+
+@theme{
+    --font-poppins: poppins, "sans-serif";
+    --font-roboto: roboto, "sans-serif";
+
+}

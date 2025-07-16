@@ -3,8 +3,8 @@ import projectImg from "../assets/projectImg.PNG";
 const Projects = () => {
   return (
     <section className="flex  items-start justify-between ">
-      <div className=" flex flex-col items-start w-auto mb-4 ">
-        <h2 className="text-xl font-bold mb-2">Projects</h2>
+      <div className=" flex flex-col items-start w-auto mb-6 ">
+        <h2 className="text-xl font-bold mb-2 font-poppins">Projects</h2>
         <div className="flex flex-col items-center justify-between">
           <ProjectCard
             title={"bimla"}
@@ -15,7 +15,7 @@ const Projects = () => {
               "This is a humorous, satirical single-page web project inspired by classic Indian tobacco ad parodies. Purpose behind to make this is just for fun, meme culture tribute, and frontend design experimentation."
             }
           />
-          <p className="text-lg font-mono mb-2">More Projects adding soon !!</p>
+          <p className="text-lg font-roboto mb-2">More Projects adding soon !!</p>
         </div>
       </div>
     </section>
