@@ -7,36 +7,69 @@ import { IoSunnyOutline } from "react-icons/io5";
 import { RxMoon } from "react-icons/rx";
 import { FaTelegram } from "react-icons/fa";
 
+import { Dock, DockIcon } from "./magicui/dock";
+
 const Navbar = () => {
   return (
-    <div className="fixed bottom-5 left-1/2 -translate-x-1/2  px-4 py-3 rounded-full backdrop-blur-md bg-[#111213] shadow-md border border-white/8 flex items-center justify-around ">
-      <div className="px-2 m-1 flex items-center justify-center">
+    <Dock className="fixed bottom-5 left-1/2 -translate-x-1/2 backdrop-blur-md bg-[#111213] rounded-full shadow-md border border-white/8 px-2">
+      <DockIcon>
         <a href="#home">
-          <FiHome className="h-[20px] w-[20px]" />
+          <FiHome className="h-[18px] w-[18px]" />
         </a>
-      </div>
-      <div className="px-2 m-1 flex items-center justify-center">
-        <LuNotebook className="h-[20px] w-[20px]" />
-      </div>
-      <div className="px-2 m-1 flex items-center justify-center">
-        <a href="https://github.com/Yashx18">
-          <FaGithub className="h-[20px] w-[20px]" />
-        </a>
-      </div>
-      <div className="px-2 m-1 flex items-center justify-center">
-        <FaTelegram className="h-[20px] w-[20px]" />
-      </div>
-      <div className="px-2 m-1 flex items-center justify-center">
-        <FaXTwitter className="h-[20px] w-[20px]" />
-      </div>
-      <div className="px-2 m-1 flex items-center justify-center">
-        <MdOutlineEmail className="h-[20px] w-[20px]" />
-      </div>
+      </DockIcon>
 
-      <div className="px-2 m-1 flex items-center justify-center">
-        <RxMoon className="h-[20px] w-[20px]" />
-      </div>
-    </div>
+      <DockIcon>
+        <a href="">
+          <LuNotebook className="h-[18px] w-[18px]" />
+        </a>
+      </DockIcon>
+
+      <div
+        data-orientation="vertical"
+        role="none"
+        class="shrink-0 bg-white/8 w-[1px] h-full"
+        mousex="[object Object]"
+        magnification="60"
+        distance="140"
+      ></div>
+
+      <DockIcon>
+        <a target="_blank" href="https://github.com/Yashx18">
+          <FaGithub className="h-[18px] w-[18px]" />
+        </a>
+      </DockIcon>
+
+      <DockIcon>
+        <a target="_blank" href="https://t.me/kenx024">
+          <FaTelegram className="h-[18px] w-[18px]" />
+        </a>
+      </DockIcon>
+
+      <DockIcon>
+        <a target="_blank" href="https://x.com/yashx024">
+          <FaXTwitter className="h-[18px] w-[18px]" />
+        </a>
+      </DockIcon>
+
+      <DockIcon>
+        <a target="_blank" href="mailto:yashx024@gmail.com">
+          <MdOutlineEmail className="h-[18px] w-[18px]" />
+        </a>
+      </DockIcon>
+
+      <div
+        data-orientation="vertical"
+        role="none"
+        class="shrink-0 bg-white/8 w-[1px] h-full"
+        mousex="[object Object]"
+        magnification="60"
+        distance="140"
+      ></div>
+
+      <DockIcon>
+        <RxMoon className="h-[18px] w-[18px]" />
+      </DockIcon>
+    </Dock>
   );
 };
 
