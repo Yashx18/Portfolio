@@ -3,7 +3,10 @@ import { FaTelegram } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <section className="flex  items-start justify-between" id="contact">
+    <section
+      className="flex  items-start justify-between animate-slide-in-blur-up translate-y-5 opacity-0 delay-500"
+      id="contact"
+    >
       <div className=" flex flex-col items-start w-auto mb-7">
         <h2 className="text-xl font-poppins font-bold mb-2">Reach out to me</h2>
         <div>

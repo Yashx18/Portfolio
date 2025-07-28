@@ -1,4 +1,4 @@
-"use client";;
+"use client";
 import { cva } from "class-variance-authority";
 import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
 import React, { useRef } from "react";
@@ -13,53 +13,53 @@ const dockVariants = cva(
   "supports-backdrop-blur:bg-white/10 supports-backdrop-blur:dark:bg-black/10 mx-auto mt-8 flex h-[58px] w-max items-center justify-center gap-2 rounded-2xl border p-2 backdrop-blur-md"
 );
 
-const Dock = React.forwardRef((
-  {
-    className,
-    children,
-    iconSize = DEFAULT_SIZE,
-    iconMagnification = DEFAULT_MAGNIFICATION,
-    iconDistance = DEFAULT_DISTANCE,
-    direction = "middle",
-    ...props
-  },
-  ref,
-) => {
-  const mouseX = useMotionValue(Infinity);
+const Dock = React.forwardRef(
+  (
+    {
+      className,
+      children,
+      iconSize = DEFAULT_SIZE,
+      iconMagnification = DEFAULT_MAGNIFICATION,
+      iconDistance = DEFAULT_DISTANCE,
+      direction = "middle",
+      ...props
+    },
+    ref
+  ) => {
+    const mouseX = useMotionValue(Infinity);
 
-  const renderChildren = () => {
-    return React.Children.map(children, (child) => {
-      if (
-        React.isValidElement(child) &&
-        child.type === DockIcon
-      ) {
-        return React.cloneElement(child, {
-          ...child.props,
-          mouseX: mouseX,
-          size: iconSize,
-          magnification: iconMagnification,
-          distance: iconDistance,
-        });
-      }
-      return child;
-    });
-  };
+    const renderChildren = () => {
+      return React.Children.map(children, (child) => {
+        if (React.isValidElement(child) && child.type === DockIcon) {
+          return React.cloneElement(child, {
+            ...child.props,
+            mouseX: mouseX,
+            size: iconSize,
+            magnification: iconMagnification,
+            distance: iconDistance,
+          });
+        }
+        return child;
+      });
+    };
 
-  return (
-    <motion.div
-      ref={ref}
-      onMouseMove={(e) => mouseX.set(e.pageX)}
-      onMouseLeave={() => mouseX.set(Infinity)}
-      {...props}
-      className={cn(dockVariants({ className }), {
-        "items-start": direction === "top",
-        "items-center": direction === "middle",
-        "items-end": direction === "bottom",
-      })}>
-      {renderChildren()}
-    </motion.div>
-  );
-});
+    return (
+      <motion.div
+        ref={ref}
+        onMouseMove={(e) => mouseX.set(e.pageX)}
+        onMouseLeave={() => mouseX.set(Infinity)}
+        {...props}
+        className={cn(dockVariants({ className }), {
+          "items-start": direction === "top",
+          "items-center": direction === "middle",
+          "items-end": direction === "bottom",
+        })}
+      >
+        {renderChildren()}
+      </motion.div>
+    );
+  }
+);
 
 Dock.displayName = "Dock";
 
@@ -69,6 +69,8 @@ const DockIcon = ({
   distance = DEFAULT_DISTANCE,
   mouseX,
   className,
+  target,
+  link,
   children,
   ...props
 }) => {
@@ -81,7 +83,11 @@ const DockIcon = ({
     return val - bounds.x - bounds.width / 2;
   });
 
-  const sizeTransform = useTransform(distanceCalc, [-distance, 0, distance], [size, magnification, size]);
+  const sizeTransform = useTransform(
+    distanceCalc,
+    [-distance, 0, distance],
+    [size, magnification, size]
+  );
 
   const scaleSize = useSpring(sizeTransform, {
     mass: 0.1,
@@ -90,16 +96,19 @@ const DockIcon = ({
   });
 
   return (
-    <motion.div
-      ref={ref}
-      style={{ width: scaleSize, height: scaleSize, padding }}
-      className={cn(
-        "flex aspect-square cursor-pointer items-center justify-center rounded-full  hover:bg-[#262626]",
-        className
-      )}
-      {...props}>
-      {children}
-    </motion.div>
+    <a href={link} target={target}>
+      <motion.div
+        ref={ref}
+        style={{ width: scaleSize, height: scaleSize, padding }}
+        className={cn(
+          "flex aspect-square cursor-pointer items-center justify-center rounded-full  hover:bg-[#262626]",
+          className
+        )}
+        {...props}
+      >
+        {children}
+      </motion.div>
+    </a>
   );
 };
 
