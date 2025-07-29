@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section className="flex  items-start justify-between animate-slide-in-blur-up translate-y-5 opacity-0 delay-500">
+    <section className="flex w-full max-w-[663px]  items-start justify-between animate-slide-in-blur-up translate-y-5 opacity-0 delay-500">
       <div className=" flex flex-col items-start w-auto py-4 mb-4">
         <h2 className="text-xl font-poppins font-bold mb-1">About</h2>
         <p className="text-[#d4d4d4] font-roboto">

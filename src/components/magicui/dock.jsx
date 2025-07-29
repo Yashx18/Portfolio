@@ -5,12 +5,12 @@ import React, { useRef } from "react";
 
 import { cn } from "@/lib/utils";
 
-const DEFAULT_SIZE = 40;
-const DEFAULT_MAGNIFICATION = 60;
-const DEFAULT_DISTANCE = 140;
+const DEFAULT_SIZE = 36;
+const DEFAULT_MAGNIFICATION = 54;
+const DEFAULT_DISTANCE = 120;
 
 const dockVariants = cva(
-  "supports-backdrop-blur:bg-white/10 supports-backdrop-blur:dark:bg-black/10 mx-auto mt-8 flex h-[58px] w-max items-center justify-center gap-2 rounded-2xl border p-2 backdrop-blur-md"
+  "mx-auto mt-8 flex h-[60px] w-max max-w-md items-center justify-center gap-2 rounded-2xl border p-2"
 );
 
 const Dock = React.forwardRef(
@@ -22,6 +22,7 @@ const Dock = React.forwardRef(
       iconMagnification = DEFAULT_MAGNIFICATION,
       iconDistance = DEFAULT_DISTANCE,
       direction = "middle",
+      bgColor = "supports-backdrop-blur:bg-white/10 supports-backdrop-blur:dark:bg-black/10 backdrop-blur-md",
       ...props
     },
     ref
@@ -49,7 +50,7 @@ const Dock = React.forwardRef(
         onMouseMove={(e) => mouseX.set(e.pageX)}
         onMouseLeave={() => mouseX.set(Infinity)}
         {...props}
-        className={cn(dockVariants({ className }), {
+        className={cn(dockVariants({ className }), bgColor, {
           "items-start": direction === "top",
           "items-center": direction === "middle",
           "items-end": direction === "bottom",
@@ -101,7 +102,7 @@ const DockIcon = ({
         ref={ref}
         style={{ width: scaleSize, height: scaleSize, padding }}
         className={cn(
-          "flex aspect-square cursor-pointer items-center justify-center rounded-full  hover:bg-[#262626]",
+          "flex aspect-square cursor-pointer items-center justify-center rounded-full  hover:bg-[#4f4f4fe3]",
           className
         )}
         {...props}

@@ -12,7 +12,7 @@ const Page = () => {
   return (
     <section
       id="home"
-      className="text-white mx-86 w-full h-auto relative py-26"
+      className="text-white lg:mx-86 md:mx-56 sm:mx-20 mx-4 w-full h-auto relative lg:py-26 md:py-16 sm:py-10 pt-6 pb-10 flex flex-col items-center justify-center"
     >
       <Navbar />
       <Heading />
