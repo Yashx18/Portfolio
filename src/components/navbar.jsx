@@ -22,7 +22,7 @@ const Navbar = () => {
 
       <DockIcon
         link={
-          "https://www.figma.com/design/xvmNxMkz0r8YBVN60VJ7CW/Showcase?node-id=0-1&t=DL9n4kOgGXSC0yaQ-1"
+          "https://www.figma.com/design/xvmNxMkz0r8YBVN60VJ7CW/Showcase?node-id=12-52&t=ziGuNpXWDORTXcao-1"
         }
         target={"_blank"}
       >
