@@ -7,6 +7,7 @@ import { IoSunnyOutline } from "react-icons/io5";
 import { RxMoon } from "react-icons/rx";
 import { FaTelegram } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
+import DarkModeToggle from "./DarkModeToggle";
 
 import { Dock, DockIcon } from "./magicui/dock";
 
@@ -22,7 +23,7 @@ const Navbar = () => {
 
       <DockIcon
         link={
-          "https://www.figma.com/design/xvmNxMkz0r8YBVN60VJ7CW/Showcase?node-id=12-52&t=ziGuNpXWDORTXcao-1"
+          "https://www.figma.com/proto/xvmNxMkz0r8YBVN60VJ7CW/Showcase?node-id=22-34&t=ONmWGQGa9Q8JzaxT-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1"
         }
         target={"_blank"}
       >
@@ -52,19 +53,6 @@ const Navbar = () => {
 
       <DockIcon link={"mailto:yashx024@gmail.com"} target={"_blank"}>
         <MdOutlineEmail className="h-[18px] w-[18px]" />
-      </DockIcon>
-
-      <div
-        data-orientation="vertical"
-        role="none"
-        class="shrink-0 bg-white/8 w-[1px] h-full"
-        mousex="[object Object]"
-        magnification="60"
-        distance="140"
-      ></div>
-
-      <DockIcon>
-        <RxMoon className="h-[18px] w-[18px]" />
       </DockIcon>
     </Dock>
   );

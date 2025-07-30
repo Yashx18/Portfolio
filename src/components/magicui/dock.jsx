@@ -5,8 +5,8 @@ import React, { useRef } from "react";
 
 import { cn } from "@/lib/utils";
 
-const DEFAULT_SIZE = 36;
-const DEFAULT_MAGNIFICATION = 54;
+const DEFAULT_SIZE = 34;
+const DEFAULT_MAGNIFICATION = 52;
 const DEFAULT_DISTANCE = 120;
 
 const dockVariants = cva(

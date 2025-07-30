@@ -6,7 +6,7 @@ const Footer = () => {
         <p className="text-xl text-[#9c9c9c] font-poppins">
           say hello on
           <a
-            href="https://x.com/yashx024"
+            href="https://x.com/TheKen__"
             target="_blank"
             className="text-[#3b82f6] hover:underline w-fit ml-1.5 font-poppins"
           >
