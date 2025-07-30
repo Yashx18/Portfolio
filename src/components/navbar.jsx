@@ -2,12 +2,8 @@ import { FiHome } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
-import { LuNotebook } from "react-icons/lu";
-import { IoSunnyOutline } from "react-icons/io5";
-import { RxMoon } from "react-icons/rx";
 import { FaTelegram } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
-import DarkModeToggle from "./DarkModeToggle";
 
 import { Dock, DockIcon } from "./magicui/dock";
 
