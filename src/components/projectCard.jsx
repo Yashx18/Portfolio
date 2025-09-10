@@ -41,7 +41,7 @@ const ProjectCard = ({
           items-center justify-between xs:w-1/10 sm:w-1/10 w-1/10"
           >
             <a href={liveLink} target="_blank">
-              {liveLink ?  <IoIosLink /> : null }
+              {liveLink ? <IoIosLink /> : null}
             </a>
             <a href={githubLink} target="_blank">
               <LuGithub />
@@ -50,7 +50,7 @@ const ProjectCard = ({
         </div>
         {/* Description */}
         <div className="w-full">
-          <p className="w-full font-roboto text-[#d4d4d4]">{description}</p>
+          <p className="w-full font-roboto text-[#a5a5a5]">{description}</p>
         </div>
       </div>
     </div>

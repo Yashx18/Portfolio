@@ -1,15 +1,18 @@
-import pfp from "../assets/pfp.jpg";
+import newPfp from "../assets/NewPFP.JPG"
+
 
 const Heading = () => {
   return (
     <section className="flex w-full max-w-[663px] items-start justify-between animate-slide-in-blur-up translate-y-5 opacity-0 delay-500 ">
       <div className="w-auto  mb-6">
         <h1 className="flex flex-col items-start justify-between  h-auto w-auto">
-          <span className="mb-2 font-poppins md:font-extrabold md:text-5xl font-semibold text-2xl">
+          <span className="mb-2 font-poppins md:font-medium md:text-5xl font-semibold text-2xl">
             Hey, I'm Yash.
           </span>
-          <span className="mb-3 font-poppins md:font-bold md:text-3xl font-medium text-xl">
-            Developer & Designer
+          <span className="mb-3  md:font-medium md:text-3xl font-medium text-xl">
+            <span className="font-instrument italic">Web Developer</span>
+            <span className="font-poppins font-normal"> & </span>
+            <span className="font-instrument italic">Designer</span>
           </span>
         </h1>
         <div className="flex items-center">
@@ -24,9 +27,9 @@ const Heading = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center w-1/5 border rounded-full">
+      <div className="flex items-center justify-center w-1/5 border border-[#4d4d4d] rounded-full">
         <img
-          src={pfp}
+          src={newPfp}
           alt="Profile Picture"
           className="w-auto h-auto rounded-full"
         />

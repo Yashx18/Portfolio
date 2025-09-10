@@ -10,7 +10,7 @@ const Contact = () => {
       <div className=" flex flex-col items-start w-auto mb-7">
         <h2 className="text-xl font-poppins font-bold mb-2">Reach out to me</h2>
         <div>
-          <p className="font-roboto tracking-tight text-[#bcbcbc]">
+          <p className="font-roboto tracking-tight text-[#a5a5a5]">
             Most of the time, I'm hanging out on Telegram, while coding. I'm
             also super active on X, so feel free to DM me there!
           </p>

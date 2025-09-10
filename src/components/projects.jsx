@@ -8,7 +8,17 @@ const Projects = () => {
         <h2 className="text-xl font-bold mb-2 font-poppins">Projects</h2>
         <div className="flex flex-col items-center justify-between">
           <ProjectCard
-            title={"bimla"}
+            title={"Brainly"}
+            liveLink={"https://brainlyui.vercel.app/"}
+            img={brainlyImg}
+            githubLink={"https://github.com/Yashx18/brainly"}
+            description={
+              "A smart, minimal app to save and organize links, tweets, messages, and notes in one place. Brainly helps you declutter your digital life and revisit important content anytime."
+            }
+            status={"Live"}
+          />
+          <ProjectCard
+            title={"Bimla"}
             liveLink={"https://bimal-murex.vercel.app/"}
             img={projectImg}
             githubLink={"https://github.com/Yashx18/bimal"}
@@ -16,15 +26,6 @@ const Projects = () => {
               "A humorous single-page web parody inspired by classic Indian tobacco ads—made for fun, meme culture, and frontend design experimentation."
             }
             status={"Live"}
-          />
-          <ProjectCard
-            title={"brainly"}
-            img={brainlyImg}
-            githubLink={"https://github.com/Yashx18/brainly"}
-            description={
-              "A smart, minimal app to save and organize links, tweets, messages, and notes in one place. Brainly helps you declutter your digital life and revisit important content anytime."
-            }
-            status={"In Progress"}
           />
           <p className="text-lg font-roboto mb-2">
             More Projects adding soon !!

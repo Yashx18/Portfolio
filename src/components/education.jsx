@@ -17,10 +17,12 @@ const Education = () => {
             </div>
             {/* Info */}
             <div className="flex flex-col items-start justify-between sm:ml-4 ml-2">
-              <h4 className="sm:font-semibold sm:text-xl text-lg font-medium font-roboto">
+              <h4 className="sm:font- sm:text-xl text-lg font-medium font-roboto">
                 Amity University
               </h4>
-              <p className="mt-1 sm:text-sm text-xs font-roboto sm:font-medium font-light">BCA in Data Analytics.</p>
+              <p className="mt-1 sm:text-sm text-xs font-roboto sm:font-medium font-light text-[#c9c9c9]">
+                BCA in Data Analytics.
+              </p>
             </div>
           </div>
           {/* Time Period */}
