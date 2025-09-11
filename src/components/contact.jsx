@@ -8,7 +8,9 @@ const Contact = () => {
       id="contact"
     >
       <div className=" flex flex-col items-start w-auto mb-7">
-        <h2 className="text-xl font-poppins font-bold mb-2">Reach out to me</h2>
+        <h2 className="text-xl font-poppins font-semibold mb-2">
+          Reach out to me
+        </h2>
         <div>
           <p className="font-roboto tracking-tight text-[#a5a5a5]">
             Most of the time, I'm hanging out on Telegram, while coding. I'm

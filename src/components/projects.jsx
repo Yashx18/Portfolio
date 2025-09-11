@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <section className="flex w-full max-w-[663px] items-start justify-between animate-slide-in-blur-up translate-y-5 opacity-0 delay-500">
       <div className=" flex flex-col items-start w-auto mb-6 ">
-        <h2 className="text-xl font-bold mb-2 font-poppins">Projects</h2>
+        <h2 className="text-xl font-semibold mb-2 font-poppins">Projects</h2>
         <div className="flex flex-col items-center justify-between">
           <ProjectCard
             title={"Brainly"}

@@ -3,7 +3,7 @@ const Education = () => {
   return (
     <section className="flex w-full max-w-[663px] items-start justify-between animate-slide-in-blur-up translate-y-5 opacity-0 delay-500">
       <div className=" flex flex-col items-start w-full mb-6">
-        <h2 className="text-xl font-bold mb-2 font-poppins">Education</h2>
+        <h2 className="text-xl font-semibold mb-2 font-poppins">Education</h2>
         <div className="flex items-center justify-between w-full mb-2">
           {/* Right Section */}
           <div className="flex items-center justify-between ">
