@@ -2,7 +2,7 @@ import newPfp from "../assets/NewPFP.JPG";
 
 const Heading = () => {
   return (
-    <section className="flex w-full max-w-[663px] items-start justify-between animate-slide-in-blur-up translate-y-5 opacity-0 delay-500 ">
+    <section className="flex w-full max-w-[663px] items-start justify-between animate-slide-in-blur-up translate-y-5 opacity-0 delay-500 mb-2">
       <div className="w-auto  mb-2">
         <h1 className="flex flex-col items-start justify-between h-auto w-auto">
           <span className="mb-1 font-poppins md:font-medium md:text-5xl font-semibold text-2xl">
