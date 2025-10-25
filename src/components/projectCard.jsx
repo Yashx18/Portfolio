@@ -10,7 +10,7 @@ const ProjectCard = ({ title, liveLink, img, description, githubLink, status }) 
           <img
             src={img}
             alt="Project Image"
-            className="h-full w-full max-h-[126px] min-h-0 min-w-0 rounded-[8px] object-cover object-center"
+            className="h-full max-h-[126px] min-h-0 w-full min-w-0 rounded-[8px] border border-neutral-500/40 object-cover object-center"
             style={{ aspectRatio: '16/9', display: 'block' }}
           />
         </a>
